@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – SwiftPlay</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Space Mono', monospace;
+      background: #0d0d10; color: #c8c8cc;
+      max-width: 680px; margin: 0 auto;
+      padding: 60px 24px 80px;
+      line-height: 1.75;
+    }
+    h1 { font-size: 22px; color: #fff; margin-bottom: 6px; }
+    .sub { font-size: 11px; color: #444; margin-bottom: 40px; letter-spacing: 0.06em; }
+    h2 { font-size: 13px; color: #fff; margin: 32px 0 10px;
+         text-transform: uppercase; letter-spacing: 0.1em; }
+    p  { font-size: 12px; color: #888; margin-bottom: 12px; }
+    strong { color: #bbb; }
+    a { color: #6cf0a0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .badge {
+      display: inline-block; margin-bottom: 32px;
+      padding: 5px 12px; background: rgba(108,240,160,0.08);
+      border: 1px solid rgba(108,240,160,0.2);
+      border-radius: 6px; font-size: 11px; color: #6cf0a0;
+    }
+  </style>
+</head>
+<body>
+  <h1>SwiftPlay – Privacy Policy</h1>
+  <p class="sub">Last updated: May 2025 &nbsp;·&nbsp; Version 1.0</p>
+
+  <div class="badge">✓ No data collected &nbsp;·&nbsp; No servers &nbsp;·&nbsp; No tracking</div>
+
+  <h2>Overview</h2>
+  <p>
+    SwiftPlay is a browser extension that automatically sets video playback speed and provides an on-screen speed control overlay.
+    <strong>We do not collect, transmit, store, or share any personal data whatsoever.</strong>
+  </p>
+
+  <h2>What Data We Access</h2>
+  <p>
+    SwiftPlay reads and writes a single setting — your preferred playback speed — to
+    <strong>chrome.storage.sync</strong>. This is a private Chrome API that stores your
+    setting locally and optionally syncs it across your own Chrome profile. No third party
+    (including the SwiftPlay developer) can access this data.
+  </p>
+  <p>
+    The extension does <strong>not</strong> read, record, or transmit:
+  </p>
+  <p>
+    · URLs or domains you visit<br />
+    · Video titles, content, or watch history<br />
+    · Browsing history or session data<br />
+    · Any personally identifiable information<br />
+    · Any analytics, telemetry, or usage statistics
+  </p>
+
+  <h2>Permissions Explained</h2>
+  <p>
+    <strong>storage</strong> — Used exclusively to save your chosen playback speed (a single number) via chrome.storage.sync.<br /><br />
+    <strong>scripting</strong> — Used to apply your speed preference to videos when you adjust it from the popup.<br /><br />
+    <strong>host_permissions (&lt;all_urls&gt;)</strong> — Required so the content script can inject the speed overlay on any website that contains a video element (e.g. YouTube, Netflix, Vimeo).
+  </p>
+
+  <h2>Third-Party Services</h2>
+  <p>
+    SwiftPlay does not communicate with any external server, API, or third-party service.
+    There are no ads, no analytics, and no remote data collection of any kind.
+  </p>
+
+  <h2>Children's Privacy</h2>
+  <p>
+    SwiftPlay does not collect any data from anyone, including children under 13.
+  </p>
+
+  <h2>Changes to This Policy</h2>
+  <p>
+    If this policy ever changes, the updated version will be published at the same URL and the
+    "Last updated" date above will reflect the change.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions? Reach out via the Chrome Web Store support tab on the SwiftPlay listing page.
+  </p>
+</body>
+</html>
